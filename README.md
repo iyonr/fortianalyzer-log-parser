@@ -26,27 +26,27 @@ Or copy the script into a `.py` file if you're not using Git.
 
 ## Usage
 
-Navigate to the directory containing `log_parser.py` and execute it with the following syntax:
+Navigate to the directory containing `log_parses_filter_by_ip.py` and execute it with the following syntax:
 
 ```bash
-python log_parser.py <path_to_log_file> [--srcip <source_ip>] [--dstip <destination_ip>] [--debug]
+python log_parses_filter_by_ip.py <path_to_log_file> [--srcip <source_ip>] [--dstip <destination_ip>] [--debug]
 ```
 
 ### Examples
 
 - **Filtering by Source IP**:
   ```bash
-  python log_parser.py my_log_file.log --srcip 192.168.1.1
+  python log_parses_filter_by_ip.py my_log_file.log --srcip 192.168.1.1
   ```
 
 - **Filtering by Destination IP**:
   ```bash
-  python log_parser.py my_log_file.log --dstip 10.1.1.1
+  python log_parses_filter_by_ip.py my_log_file.log --dstip 10.1.1.1
   ```
 
 - **Using Debug Mode for Detailed Analysis**:
   ```bash
-  python log_parser.py my_log_file.log --srcip 192.168.1.1 --debug
+  python log_parses_filter_by_ip.py my_log_file.log --srcip 192.168.1.1 --debug
   ```
 
 Results are saved to a file prefixed with `DEBUG-` and detailed processing information is printed to the console.
